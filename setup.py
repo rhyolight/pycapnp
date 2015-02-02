@@ -127,6 +127,10 @@ else:
                             extra_compile_args=['--std=c++11'],
                             libraries=['capnpc', 'capnp-rpc', 'capnp', 'kj-async', 'kj'])]
 
+print("Contents of the 'extensions' list:")
+for e in extensions:
+    print(e)
+
 setup(
     name="pycapnp",
     packages=["capnp"],
