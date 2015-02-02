@@ -8,8 +8,8 @@ try:
 except ImportError:
     use_cython = False
 
-if use_cython and Cython.__version__ < '0.19.1':
-    use_cython = False
+#if use_cython and Cython.__version__ < '0.19.1':
+use_cython = False
 
 import pkg_resources
 setuptools_version = pkg_resources.get_distribution("setuptools").version
